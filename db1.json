@@ -1,12 +1,57 @@
 {
-  "ground": [  {
-    "Name": "12",
-    "Photo": "12",
-    "Owner": "freemanasfreeze@gmail.com",
-    "PhoneNo": "+95943042382",
-    "FieldFloor": "12",
-    "FieldRoof": "",
-    "Rating": "",
-    "id": 1
-}]
+  "ground": [
+    {
+      "Name": "12",
+      "Photo": "12",
+      "Owner": "freemanasfreeze@gmail.com",
+      "PhoneNo": "+95943042382",
+      "FieldFloor": "12",
+      "FieldRoof": "",
+      "Rating": "12345",
+      "id": 1
+    }
+  ],
+  "FieldUser": [
+    {
+      "userName": 1,
+      "phoneNo": "+95943042382",
+      "teamName": "CKM Team",
+      "isBlacklist": false,
+      "Comment": "",
+      "isDelete": false,
+      "UpdateDateTime": "",
+      "UpdateOperator": "",
+      "Id": 1
+    }
+  ],
+  "FieldFloor": [
+    {
+      "floorName": 1,
+      "Comment": "",
+      "isDelete": false,
+      "UpdateDateTime": "",
+      "UpdateOperator": "",
+      "Id": 1
+    }
+  ],
+  "FieldRoof": [
+    {
+      "roofName": 1,
+      "Comment": "",
+      "isDelete": false,
+      "UpdateDateTime": "",
+      "UpdateOperator": "",
+      "Id": 1
+    }
+  ],
+  "FieldLocation": [
+    {
+      "locationName": 1,
+      "Comment": "",
+      "isDelete": false,
+      "UpdateDateTime": "",
+      "UpdateOperator": "",
+      "Id": 1
+    }
+  ]
 }
