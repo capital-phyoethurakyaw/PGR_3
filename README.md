@@ -4,3 +4,7 @@
 -- ptk
 
 --ptk ses
+
+
+
+--ses ptk
