@@ -24,6 +24,8 @@
   },
   "scripts": {
     "server1": "json-server --watch db1.json --port 3006",
+    "server2": "json-server --watch db2.json --port 3007",
+
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",

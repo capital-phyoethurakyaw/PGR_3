@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
-import {AddUser} from "components/AddUser/AddUser.js";
 
 // reactstrap components
 import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
@@ -142,16 +141,8 @@ function FullScreenMap() {
   await axios.delete(`http://localhost:3006/ground/${id}`);
   loadUsers();
 };
-const insertUser  = async () => {
-  await axios.get(`/component/AddUser/AddUser`);
-};
 let history= useHistory();
-const routeChange = () =>{ 
-  history.push('/AddUser');
-}
-function handleClick() {
-  history.push("/component/AddUser/AddUser");
-}
+
  return (
     <>
       <PanelHeader size="sm" />
@@ -166,9 +157,6 @@ function handleClick() {
                   className="map"
                   style={{ position: "relative", overflow: "hidden" }}
                 >
-                  <div class="col-md-12 bg-light text-right">
-                  <button type="button" class="btn btn-outline-info" onClick={handleClick}>Add User</button>
-                  </div>
                    <table class="table border shadow">
           <thead class="thead-dark">
             <tr>
@@ -229,7 +217,6 @@ function handleClick() {
           </Col>
         </Row>
       </div>
-      
     </>
   );
 }
