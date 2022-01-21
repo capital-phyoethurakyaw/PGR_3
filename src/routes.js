@@ -45,10 +45,18 @@ var dashRoutes = [
     icon: "location_map-big",
     component: Maps,
     layout: "/admin",
+  }, 
+  {
+    pro: true,
+    path: "/upgrade",
+    name: "Upgrade to PRO",
+    icon: "objects_spaceship",
+    component: Upgrade,
+    layout: "/admin",
   },
   {
     path: "/notifications",
-    name: "Notifications",
+    name: "FieldUser",
     icon: "ui-1_bell-53",
     component: Notifications,
     layout: "/admin",
@@ -82,5 +90,6 @@ var dashRoutes = [
     component: Upgrade,
     layout: "/admin",
   },
+
 ];
 export default dashRoutes;
