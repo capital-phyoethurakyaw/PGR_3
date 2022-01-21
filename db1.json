@@ -1,64 +1,12 @@
 {
-  "ground": [
-    {
-      "Name": "12",
-      "Photo": "12",
-      "Owner": "freemanasfreeze@gmail.com",
-      "PhoneNo": "+95943042382",
-      "FieldFloor": "12",
-      "FieldRoof": "",
-      "Rating": "",
-      "id": 1
-    },
-    {
-      "Name": "12",
-      "Photo": "12",
-      "Owner": "freemanasfreeze@gmail.com",
-      "PhoneNo": "+95943042382",
-      "FieldFloor": "12",
-      "FieldRoof": "",
-      "Rating": "",
-      "id": 2
-    },
-    {
-      "Name": "12",
-      "Photo": "12",
-      "Owner": "freemanasfreeze@gmail.com",
-      "PhoneNo": "+95943042382",
-      "FieldFloor": "12",
-      "FieldRoof": "",
-      "Rating": "",
-      "id": 3
-    },
-    {
-      "Name": "12",
-      "Photo": "12",
-      "Owner": "freemanasfreeze@gmail.com",
-      "PhoneNo": "+95943042382",
-      "FieldFloor": "12",
-      "FieldRoof": "",
-      "Rating": "",
-      "id": 4
-    },
-    {
-      "Name": "12",
-      "Photo": "12",
-      "Owner": "freemanasfreeze@gmail.com",
-      "PhoneNo": "+95943042382",
-      "FieldFloor": "12",
-      "FieldRoof": "",
-      "Rating": "",
-      "id": 5
-    },
-    {
-      "Name": "12",
-      "Photo": "12",
-      "Owner": "freemanasfreeze@gmail.com",
-      "PhoneNo": "+95943042382",
-      "FieldFloor": "12",
-      "FieldRoof": "",
-      "Rating": "",
-      "id": 7
-    }
-  ]
+  "ground": [  {
+    "Name": "12",
+    "Photo": "12",
+    "Owner": "freemanasfreeze@gmail.com",
+    "PhoneNo": "+95943042382",
+    "FieldFloor": "12",
+    "FieldRoof": "",
+    "Rating": "",
+    "id": 1
+}]
 }
