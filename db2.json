@@ -1,0 +1,23 @@
+{
+   "a": [{
+    "ptk": 
+      {
+        "Name": "12",
+        "Photo": "12",
+        "Owner": "freemanasfreeze@gmail.com",
+        "PhoneNo": "+95943042382",
+        "FieldFloor": "12",
+        "FieldRoof": "",
+        "Rating": "",
+        "id": 1
+      },
+      "ktp": {
+          "Id" :1,
+          "name":"female"
+      } 
+      } 
+    ],
+    "b":[{
+        "pt":1
+    }]
+}
