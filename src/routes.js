@@ -41,7 +41,7 @@ var dashRoutes = [
   },
   {
     path: "/maps",
-    name: "Maps",
+    name: "Field Ground",
     icon: "location_map-big",
     component: Maps,
     layout: "/admin",
