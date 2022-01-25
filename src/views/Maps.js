@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
-
 // reactstrap components
 import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 
@@ -127,7 +126,7 @@ const MapWrapper = () => {
 
 function FullScreenMap() {
   
-//  const users = [ {name: "", username: "", email: "", phone: "",webiste: "" }, {name: "ptk", username: "", email: "", phone: "",webiste: "" }];
+//const users = [ {name: "", username: "", email: "", phone: "",webiste: "" }, {name: "ptk", username: "", email: "", phone: "",webiste: "" }];
  const [ground, setUser] = useState([]);
 
  useEffect(() => {
@@ -140,6 +139,17 @@ function FullScreenMap() {
  const deleteUser = async id => {
   await axios.delete(`http://localhost:3006/ground/${id}`);
   loadUsers();
+};
+function handleClick() {
+  history.push("./views/users");
+}
+const routeChange = () =>{ 
+  history.push('/users');
+}
+const onSubmit = async e => {
+  e.preventDefault();
+  await axios.post("https://61e8db047ced4a00172ff6db.mockapi.io/ptkfustalgroundrentalservice/v1/FieldInfo/", user);
+  history.push("https://61e8db047ced4a00172ff6db.mockapi.io/ptkfustalgroundrentalservice/v1/FieldInfo/");
 };
 let history= useHistory();
 
@@ -157,6 +167,14 @@ let history= useHistory();
                   className="map"
                   style={{ position: "relative", overflow: "hidden" }}
                 >
+                   <div class="col-md-12 bg-light text-right">
+                   < button type="button" class="btn btn-outline-info" onClick={onSubmit}>Add User</button>
+                   </div>
+                   <Link class="btn btn-outline-info  text-right" 
+                   onClick={routeChange}
+                  >
+                    Add User
+                  </Link>
                    <table class="table border shadow">
           <thead class="thead-dark">
             <tr>
@@ -218,6 +236,7 @@ let history= useHistory();
         </Row>
       </div>
     </>
+    
   );
 }
 

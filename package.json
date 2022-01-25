@@ -19,13 +19,12 @@
     "react-notification-alert": "0.0.13",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^4.0.3",
     "reactstrap": "8.9.0"
   },
   "scripts": {
     "server1": "json-server --watch db1.json --port 3006",
     "server2": "json-server --watch db2.json --port 3007",
-
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
