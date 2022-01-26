@@ -4,9 +4,11 @@ import { Link, useHistory } from "react-router-dom";
 import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
 import ModalBox from "../components/Modal";
+import Modalrs from "../components/Modalrs";
+
 import { modalAction } from "Store/Action"
 import { useSelector, useDispatch } from "react-redux";
-import AddUser from "components/users/AddUser";
+// import AddUser from "components/users/AddUser";
 // import { log } from "npmlog";
 const FieldLocation = () => {
     const { isModal } = useSelector((state) => state.modalReducer);
@@ -22,32 +24,10 @@ const FieldLocation = () => {
     const addUser = ()=> {
         dispatch(modalAction("IS_MODAL", true));
     } 
-    //  const [ground, setUser] = useState([]);
-
-    //  useEffect(() => {
-    //    loadUsers();
-    //  }, []);
-    //  const loadUsers = async () => {
-    //    const result = await axios.get("http://localhost:3006/ground");
-    //    setUser(result.data.reverse());
-    //  };
-    //  const deleteUser = async id => {
-    //   await axios.delete(`http://localhost:3006/ground/${id}`);
-    //   loadUsers();
-    // };
-    // function handleClick() {
-    //   history.push("./views/users");
-    // }
-    // const routeChange = () =>{ 
-    //   history.push('/users');
-    // }
-    // const onSubmit = async e => {
-    //   e.preventDefault();
-    //   await axios.post("https://61e8db047ced4a00172ff6db.mockapi.io/ptkfustalgroundrentalservice/v1/FieldInfo/", user);
-    //   history.push("https://61e8db047ced4a00172ff6db.mockapi.io/ptkfustalgroundrentalservice/v1/FieldInfo/");
-    // };
-    // let history= useHistory();
-
+    const handleShow = () => setShow(true);
+    const [show, setShow] = useState(false);
+    const handleModalOff = () => setShow(false);
+  
     return (
         <>
             <PanelHeader size="sm" />
@@ -60,6 +40,7 @@ const FieldLocation = () => {
                                 Ismodal={isModal}
                                 handleClose={handleClose}
                             />
+                            <Modalrs isModal={show} handleModalOff={handleModalOff} />
                             <CardBody>
                                 <div
                                     id="map"
@@ -68,6 +49,10 @@ const FieldLocation = () => {
                                 >
                                     <div class="col-md-12 bg-light text-right">
                                         < button type="button" class="btn btn-outline-info" onClick={ addUser}>Add User</button>
+                                    </div>
+
+                                    <div class="col-md-12 bg-light text-right">
+                                        < button type="button" class="btn btn-outline-info" onClick={ handleShow}>Add Userrs</button>
                                     </div>
                                     {/* <Link class="btn btn-outline-info  text-right" 
                    onClick={routeChange}
