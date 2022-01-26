@@ -23,6 +23,7 @@ import TableList from "views/TableList.js";
 import Maps from "views/Maps.js";
 import Upgrade from "views/Upgrade.js";
 import UserPage from "views/UserPage.js";
+import FieldLocation from "views/FieldLocation"
 
 var dashRoutes = [
   {
@@ -44,6 +45,13 @@ var dashRoutes = [
     name: "Field Ground",
     icon: "location_map-big",
     component: Maps,
+    layout: "/admin",
+  }, 
+   {
+    path: "/FieldLocation",
+    name: "Field Location",
+    icon: "location_map-big",
+    component: FieldLocation,
     layout: "/admin",
   }, 
   {

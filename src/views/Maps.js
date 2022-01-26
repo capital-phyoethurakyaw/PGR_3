@@ -148,8 +148,8 @@ const routeChange = () =>{
 }
 const onSubmit = async e => {
   e.preventDefault();
-  await axios.post("https://61e8db047ced4a00172ff6db.mockapi.io/ptkfustalgroundrentalservice/v1/FieldInfo/", user);
-  history.push("https://61e8db047ced4a00172ff6db.mockapi.io/ptkfustalgroundrentalservice/v1/FieldInfo/");
+  // await axios.post("https://61e8db047ced4a00172ff6db.mockapi.io/ptkfustalgroundrentalservice/v1/FieldInfo/", user);
+  // history.push("https://61e8db047ced4a00172ff6db.mockapi.io/ptkfustalgroundrentalservice/v1/FieldInfo/");
 };
 let history= useHistory();
 
@@ -170,11 +170,11 @@ let history= useHistory();
                    <div class="col-md-12 bg-light text-right">
                    < button type="button" class="btn btn-outline-info" onClick={onSubmit}>Add User</button>
                    </div>
-                   <Link class="btn btn-outline-info  text-right" 
+                   {/* <Link class="btn btn-outline-info  text-right" 
                    onClick={routeChange}
                   >
-                    Add User
-                  </Link>
+                    Add User 1
+                  </Link> */}
                    <table class="table border shadow">
           <thead class="thead-dark">
             <tr>
