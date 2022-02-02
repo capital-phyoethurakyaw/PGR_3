@@ -53,7 +53,7 @@ var dashRoutes = [
     icon: "location_map-big",
     component: FieldLocation,
     layout: "/admin",
-  }, 
+  },
   {
     pro: true,
     path: "/upgrade",
@@ -75,12 +75,12 @@ var dashRoutes = [
     icon: "users_single-02",
     component: UserPage,
     layout: "/admin",
-  },
+  }, 
   {
     path:"/newuser",
     name:"Add New User",
     icon:"users_circle-08",
-    components:AddNewUser,
+    component: AddNewUser,
     layout:"/admin",
   },
   {
