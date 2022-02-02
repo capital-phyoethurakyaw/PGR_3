@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Component } from "react";
 // import axios from "axios";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory,useParams } from "react-router-dom";
 import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
 import ModalBox from "../components/Modal";
@@ -52,7 +52,7 @@ const FieldLocation = () => {
                                     </div>
 
                                     <div class="col-md-12 bg-light text-right">
-                                        < button type="button" class="btn btn-outline-info" onClick={ handleShow}>Add Userrs</button>
+                                        < button type="button" class="btn btn-outline-info" onClick={ handleShow}>Add Ground</button>
                                     </div>
                                     {/* <Link class="btn btn-outline-info  text-right" 
                    onClick={routeChange}

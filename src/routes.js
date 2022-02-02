@@ -24,7 +24,7 @@ import Maps from "views/Maps.js";
 import Upgrade from "views/Upgrade.js";
 import UserPage from "views/UserPage.js";
 import FieldLocation from "views/FieldLocation"
-
+import AddNewUser from "views/AddNewUser.js";
 var dashRoutes = [
   {
     path: "/dashboard",
@@ -75,6 +75,13 @@ var dashRoutes = [
     icon: "users_single-02",
     component: UserPage,
     layout: "/admin",
+  },
+  {
+    path:"/newuser",
+    name:"Add New User",
+    icon:"users_circle-08",
+    components:AddNewUser,
+    layout:"/admin",
   },
   {
     path: "/extended-tables",
