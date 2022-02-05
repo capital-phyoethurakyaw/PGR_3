@@ -15,6 +15,7 @@ const FieldLocation = () => {
     const dispatch = useDispatch();
     const handleClose = () => {
         dispatch(modalAction("IS_MODAL", false));
+        
     };
     const ground = [{
         Name: "12323", Photo: "1232", Owner: "", PhoneNo: "", FieldLocation: "12321",

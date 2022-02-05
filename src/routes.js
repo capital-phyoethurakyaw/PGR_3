@@ -46,10 +46,17 @@ var dashRoutes = [
     icon: "location_map-big",
     component: Maps,
     layout: "/admin",
-  }, 
-   {
+  },
+  {
     path: "/FieldLocation",
     name: "Field Location",
+    icon: "location_map-big",
+    component: FieldLocation,
+    layout: "/admin",
+  },
+  {
+    path: "/FieldRoof",
+    name: "Field Roof",
     icon: "location_map-big",
     component: FieldLocation,
     layout: "/admin",
@@ -75,13 +82,13 @@ var dashRoutes = [
     icon: "users_single-02",
     component: UserPage,
     layout: "/admin",
-  }, 
+  },
   {
-    path:"/newuser",
-    name:"Add New User",
-    icon:"users_circle-08",
+    path: "/newuser",
+    name: "Add New User",
+    icon: "users_circle-08",
     component: AddNewUser,
-    layout:"/admin",
+    layout: "/admin",
   },
   {
     path: "/extended-tables",
