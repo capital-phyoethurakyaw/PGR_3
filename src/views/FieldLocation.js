@@ -36,7 +36,7 @@ const FieldLocation = () => {
                 <Row>
                     <Col xs={12}>
                         <Card>
-                            <CardHeader>Location Maps</CardHeader>
+                            <CardHeader>FieldLocation</CardHeader>
                             <ModalBox
                                 Ismodal={isModal}
                                 handleClose={handleClose}

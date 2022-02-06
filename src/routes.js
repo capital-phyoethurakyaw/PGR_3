@@ -20,11 +20,15 @@ import Notifications from "views/Notifications.js";
 import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
 import TableList from "views/TableList.js";
-import Maps from "views/Maps.js";
+import FieldGround from "views/FieldGround.js";
 import Upgrade from "views/Upgrade.js";
 import UserPage from "views/UserPage.js";
 import FieldLocation from "views/FieldLocation"
 import AddNewUser from "views/AddNewUser.js";
+import FieldRoof from "views/FieldRoof";
+import FieldFloor from "views/FieldFloor";
+import FieldUser from "views/FieldUser";
+import FieldBookng from "views/FieldBooking";
 var dashRoutes = [
   {
     path: "/dashboard",
@@ -34,17 +38,17 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/icons",
-    name: "Icons",
-    icon: "design_image",
-    component: Icons,
+    path: "/FieldBooking",
+    name: "Field Booking",
+    icon: "location_map-big",
+    component: FieldBookng,
     layout: "/admin",
   },
   {
-    path: "/maps",
+    path: "/FieldGround",
     name: "Field Ground",
     icon: "location_map-big",
-    component: Maps,
+    component: FieldGround,
     layout: "/admin",
   },
   {
@@ -58,7 +62,26 @@ var dashRoutes = [
     path: "/FieldRoof",
     name: "Field Roof",
     icon: "location_map-big",
-    component: FieldLocation,
+    component: FieldRoof,
+    layout: "/admin",
+  }, 
+  {
+    path: "/FieldFloor",
+    name: "Field Floor",
+    icon: "location_map-big",
+    component: FieldFloor,
+    layout: "/admin",
+  }, {
+    path: "/FieldUser",
+    name: "Field User",
+    icon: "location_map-big",
+    component: FieldUser,
+    layout: "/admin",
+  },  {
+    path: "/newuser",
+    name: "Add New User",
+    icon: "users_circle-08",
+    component: AddNewUser,
     layout: "/admin",
   },
   {
@@ -71,7 +94,7 @@ var dashRoutes = [
   },
   {
     path: "/notifications",
-    name: "FieldUser",
+    name: "Notifications",
     icon: "ui-1_bell-53",
     component: Notifications,
     layout: "/admin",
@@ -83,13 +106,7 @@ var dashRoutes = [
     component: UserPage,
     layout: "/admin",
   },
-  {
-    path: "/newuser",
-    name: "Add New User",
-    icon: "users_circle-08",
-    component: AddNewUser,
-    layout: "/admin",
-  },
+
   {
     path: "/extended-tables",
     name: "Table List",
@@ -102,6 +119,12 @@ var dashRoutes = [
     name: "Typography",
     icon: "design-2_ruler-pencil",
     component: Typography,
+    layout: "/admin",
+  }, {
+    path: "/icons",
+    name: "Icons",
+    icon: "design_image",
+    component: Icons,
     layout: "/admin",
   },
   {

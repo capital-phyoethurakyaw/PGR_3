@@ -8,7 +8,7 @@ import Modalrs from "../components/Modalrs";
 
 import { modalAction } from "Store/Action"
 import { useSelector, useDispatch } from "react-redux";
-function FieldRoof  ()  { 
+function FieldBookng  ()  { 
     return (
         <>
                  <PanelHeader size="sm" />
@@ -16,7 +16,7 @@ function FieldRoof  ()  {
                 <Row>
                     <Col xs={12}>
                     <Card>
-                            <CardHeader>FieldRoof</CardHeader> 
+                            <CardHeader>FieldBookng</CardHeader> 
                             <CardBody>  
                             </CardBody>
                         </Card>
@@ -27,4 +27,4 @@ function FieldRoof  ()  {
     );
 
 }
-export default FieldRoof;
+export default FieldBookng;

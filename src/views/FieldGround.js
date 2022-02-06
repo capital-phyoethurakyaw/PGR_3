@@ -124,7 +124,7 @@ const MapWrapper = () => {
   );
 };
 
-function FullScreenMap() {
+function FieldGround() {
   
 //const users = [ {name: "", username: "", email: "", phone: "",webiste: "" }, {name: "ptk", username: "", email: "", phone: "",webiste: "" }];
  const [ground, setUser] = useState([]);
@@ -160,7 +160,7 @@ let history= useHistory();
         <Row>
           <Col xs={12}>
             <Card>
-              <CardHeader>Google Maps</CardHeader>
+              <CardHeader>FieldGround</CardHeader>
               <CardBody>
                 <div
                   id="map"
@@ -240,4 +240,4 @@ let history= useHistory();
   );
 }
 
-export default FullScreenMap;
+export default FieldGround;
