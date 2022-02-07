@@ -46,14 +46,19 @@ function Modalrs({ isModal, handleModalOff }) {
                     //  value={name}
                     onChange={e => onInputChange(e)}
                      />
-                    </div>
-                    <div className="form-group">
+                    </div><br />
+                    <form method="post" enctype="multipart/form-data">
+                      <div>
+                      <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png"/>
+                      </div>
+                    </form><br />
+                    {/* <div className="form-group">
                     <input type="text"  className="form-control form-control-lg"
                      placeholder="Enter Photo"
                      name="photo"
                     //  value={photo}
                      onChange={e => onInputChange(e)}/>
-                    </div>
+                    </div> */}
 
                     <div className="form-group">
                     <input type="text"  className="form-control form-control-lg"
@@ -77,19 +82,34 @@ function Modalrs({ isModal, handleModalOff }) {
                      name="fieldfloor"
                     //  value={fieldfloor}
                      onChange={e => onInputChange(e)}/> */}
-                     <Dropdown>
-  <Dropdown.Toggle>Enter FieldFloor</Dropdown.Toggle>
-  <Dropdown.Menu>
-  </Dropdown.Menu>
-  </Dropdown>
+                    <Dropdown>
+                   <Dropdown.Toggle variant="success" id="dropdown-basic" size="sm">
+                    Select FieldFloor
+                   </Dropdown.Toggle>
+                   <Dropdown.Menu>
+                   <Dropdown.Item href="#/action-1">123</Dropdown.Item>
+                   <Dropdown.Item href="#/action-2">12345</Dropdown.Item>
+                   <Dropdown.Item href="#/action-3">123232</Dropdown.Item>
+                   </Dropdown.Menu>
+                   </Dropdown>
                     </div>
                      
                     <div className="form-group">
-                    <input type="text"  className="form-control form-control-lg"
+                    {/* <input type="text"  className="form-control form-control-lg"
                      placeholder="Enter FieldRoof"
                      name="fieldroof"
                     //  value={fieldroof}
-                     onChange={e => onInputChange(e)}/>
+                     onChange={e => onInputChange(e)}/> */}
+                     <Dropdown>
+                      <Dropdown.Toggle variant="success" id="dropdown-basic" size="sm">
+                      Select FieldRoof
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu>
+                      <Dropdown.Item href="#/action-1">123</Dropdown.Item>
+                      <Dropdown.Item href="#/action-2">12345</Dropdown.Item>
+                      <Dropdown.Item href="#/action-3">123232</Dropdown.Item>
+                      </Dropdown.Menu>
+                      </Dropdown>
                     </div>
 
                     <div className="form-group">
