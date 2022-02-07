@@ -79,7 +79,7 @@ var dashRoutes = [
     layout: "/admin",
   },  {
     path: "/newuser",
-    name: "Add New User",
+    name: "Users",
     icon: "users_circle-08",
     component: AddNewUser,
     layout: "/admin",
