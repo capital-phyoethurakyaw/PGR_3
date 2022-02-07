@@ -53,7 +53,7 @@ var dashRoutes = [
   },
   {
     path: "/FieldLocation",
-    name: "Field Location",
+    name: "Field Ground",
     icon: "location_map-big",
     component: FieldLocation,
     layout: "/admin",
@@ -75,15 +75,16 @@ var dashRoutes = [
     path: "/FieldUser",
     name: "Field User",
     icon: "location_map-big",
-    component: FieldUser,
-    layout: "/admin",
-  },  {
-    path: "/newuser",
-    name: "Users",
-    icon: "users_circle-08",
     component: AddNewUser,
     layout: "/admin",
-  },
+  }, 
+  //  {
+  //   path: "/newuser",
+  //   name: "Users",
+  //   icon: "users_circle-08",
+  //   component: AddNewUser,
+  //   layout: "/admin",
+  // },
   {
     pro: true,
     path: "/upgrade",

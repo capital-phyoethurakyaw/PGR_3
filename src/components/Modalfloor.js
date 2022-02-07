@@ -1,7 +1,7 @@
 import { Button, Modal,Dropdown} from 'react-bootstrap/'
 import { useState, useEffect } from 'react'
 import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
-function Modalusers({ isModal, handleModalOff }) {
+function Modalfloor({ isModal, handleModalOff }) {
     useEffect(() => {
         console.log(isModal)
         setShow(isModal);
@@ -17,51 +17,22 @@ function Modalusers({ isModal, handleModalOff }) {
                 backdrop="static"
                 keyboard={false}
             >
-                {/* <Modal.Body>
-                <h2 className="title">Add New User</h2> */}
-                {/* <div className="content"> */}
-                <Modal.Body>
-                {/* <div className="content"> */}
+            <Modal.Body>
         <Row>
           <Col md="12">
             <Card>
               <CardHeader>
-                <h2 className="title">Add New User</h2>
+                <h2 className="title">Add New FieldFloor</h2>
               </CardHeader>
               <CardBody>
                   <form>
                   <div class="form-group">
-            <label>User Name</label>
+            <label>Floor Name</label>
             <input
               type="text"
               class="form-control"
               id="name"
             />
-          </div>
-          <div class="form-group">
-            <label >PhoneNo</label>
-            <input
-              type="text"
-              class="form-control"
-              id="exampleInputPhoneno"
-            />
-          </div>
-          <div class="form-group">
-            <label >Team Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="exampleInputPhoneno"
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="checkbox"
-              class="form-check-input"
-            />
-            <label>
-              Is BlackList
-            </label>
           </div>
           <div class="form-group">
           <label>Comment</label>
@@ -82,7 +53,7 @@ function Modalusers({ isModal, handleModalOff }) {
             </div>
             <div className="d-grid gap-2">
                      <Button variant="success" size="lg" onClick={handleModalOff}>
-                      Add New User
+                      Add New FieldFloor
                      </Button>
             </div>
                   </form>
@@ -97,4 +68,4 @@ function Modalusers({ isModal, handleModalOff }) {
         </>
     );
 }
-export default Modalusers;
+export default Modalfloor;
