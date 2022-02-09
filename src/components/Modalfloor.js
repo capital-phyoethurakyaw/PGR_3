@@ -1,9 +1,19 @@
 import { Button, Modal,Dropdown} from 'react-bootstrap/'
-import { useState, useEffect } from 'react'
+import { useState, useEffect,createRef } from 'react'
+import { Provider } from 'react-redux';
 import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 function Modalfloor({ isModal, handleModalOff }) {
+  const nameRef=createRef();
+  const commentRef=createRef();
+  const checkRef=createRef();
+    const handleClick=()=>{
+        console.log(nameRef.current.value);
+        console.log(commentRef.current.value);
+        console.log(checkRef.current.value);
+    };
     useEffect(() => {
         console.log(isModal)
+        // console.log(nameRef.current.value)
         setShow(isModal);
     });
     
@@ -32,6 +42,8 @@ function Modalfloor({ isModal, handleModalOff }) {
               type="text"
               class="form-control"
               id="name"
+              ref={nameRef}
+              // onChange={(event)=>changeText(event)}
             />
           </div>
           <div class="form-group">
@@ -39,6 +51,8 @@ function Modalfloor({ isModal, handleModalOff }) {
             <input
               type="text"
               class="form-control"
+              ref={commentRef}
+              // onChange={e => onInputChange(e)}
             />
             </div>
             <div class="form-group">
@@ -46,15 +60,21 @@ function Modalfloor({ isModal, handleModalOff }) {
               type="checkbox"
               class="form-check-input"
               id="exampleCheck1"
+              ref={checkRef}
+              // onChange={e => onInputChange(e)}
             />
             <label>
               Is Delete
             </label>
             </div>
             <div className="d-grid gap-2">
-                     <Button variant="success" size="lg" onClick={handleModalOff}>
+                    <Button 
+                     variant="success" size="lg" 
+                    //  onChange={(event)=>changeText(event)}
+                    onClick={()=>handleClick()}
+                    >
                       Add New FieldFloor
-                     </Button>
+                    </Button>
             </div>
                   </form>
                   </CardBody>
@@ -68,4 +88,7 @@ function Modalfloor({ isModal, handleModalOff }) {
         </>
     );
 }
+
 export default Modalfloor;
+
+
