@@ -1,7 +1,18 @@
 import { Button, Modal,Dropdown} from 'react-bootstrap/'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, createRef } from 'react'
 import { Row, Col, Card, CardHeader, CardBody } from "reactstrap";
 function Modalusers({ isModal, handleModalOff }) {
+
+  const nameRef=createRef();
+  const phoneRef=createRef();
+  const teamRef=createRef();
+  const commentRef=createRef();
+  const handleClick=()=>{
+    console.log(nameRef.current.value);
+    console.log(phoneRef.current.value);
+    console.log(teamRef.current.value);
+    console.log(commentRef.current.value);
+};
     useEffect(() => {
         console.log(isModal)
         setShow(isModal);
@@ -36,6 +47,7 @@ function Modalusers({ isModal, handleModalOff }) {
               type="text"
               class="form-control"
               id="name"
+              ref={nameRef}
             />
           </div>
           <div class="form-group">
@@ -44,6 +56,7 @@ function Modalusers({ isModal, handleModalOff }) {
               type="text"
               class="form-control"
               id="exampleInputPhoneno"
+              ref={phoneRef}
             />
           </div>
           <div class="form-group">
@@ -52,6 +65,7 @@ function Modalusers({ isModal, handleModalOff }) {
               type="text"
               class="form-control"
               id="exampleInputPhoneno"
+              ref={teamRef}
             />
           </div>
           <div class="form-group">
@@ -68,6 +82,7 @@ function Modalusers({ isModal, handleModalOff }) {
             <input
               type="text"
               class="form-control"
+              ref={commentRef}
             />
             </div>
             <div class="form-group">
@@ -81,7 +96,7 @@ function Modalusers({ isModal, handleModalOff }) {
             </label>
             </div>
             <div className="d-grid gap-2">
-                     <Button variant="success" size="lg" onClick={handleModalOff}>
+                     <Button variant="success" size="lg" onClick={()=>handleClick()}>
                       Add New User
                      </Button>
             </div>

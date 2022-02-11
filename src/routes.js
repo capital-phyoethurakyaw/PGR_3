@@ -29,7 +29,15 @@ import FieldRoof from "views/FieldRoof";
 import FieldFloor from "views/FieldFloor";
 import FieldUser from "views/FieldUser";
 import FieldBookng from "views/FieldBooking";
+import  LoginPage from "views/LoginPage";
 var dashRoutes = [
+  {
+    path:"/loginpage",
+    name:"LoginPage",
+    icon:"design_app",
+    component:LoginPage,
+    layout:"/admin",
+  },
   {
     path: "/dashboard",
     name: "Dashboard",
