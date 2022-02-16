@@ -7,15 +7,17 @@ import { modalAction } from "Store/Action"
 import { useSelector, useDispatch } from "react-redux";
 const AddNewUser = () => {
   const { isModal } = useSelector((state) => state.modalReducer);
+  const { user_data } = useSelector((state) => state.fielduserReducer);
+  console.log(user_data);
+//   const contacts =useSelector(state => state);
+//     console.log(contacts);
   const dispatch = useDispatch();
   const handleClose = () => {
       dispatch(modalAction("IS_MODAL", false));
   };
-  const addUser = ()=> {
-      dispatch(modalAction("IS_MODAL", true));
-  } 
+  
  const user=[{
-   UserName:"Shwe",PhoneNo:"09969695317",TeamName:"CapitalKnowledge",IsBlackList:"0",Comment:"dsfdg",IsDelete:"1"
+   UserName:user_data.UserName,PhoneNo:user_data.PhoneNo,TeamName:user_data.TeamName,IsBlackList:user_data.IsBlackList,Comment:user_data.Comment,IsDelete:user_data.IsDelete
  }];
   const handleShow = () => setShow(true);
   

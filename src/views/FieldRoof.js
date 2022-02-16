@@ -8,13 +8,16 @@ import Modalroof from "components/Modalroof";
 import { modalAction } from "Store/Action"
 import { useSelector, useDispatch } from "react-redux";
 function FieldRoof  ()  { 
-    const { isModal } = useSelector((state) => state.modalReducer);
+const { isModal } = useSelector((state) => state.modalReducer);
+    const { roof_data } = useSelector((state) => state.roofReducer);
+  console.log(roof_data);
   const dispatch = useDispatch();
   const handleClose = () => {
       dispatch(modalAction("IS_MODAL", false));
   };
     const roof=[{
-        RoofName:"123",Comment:"dsfdg",IsDelete:"1"
+        // RoofName:"123",Comment:"dsfdg",IsDelete:"1"
+        RoofName:roof_data.RoofName,Comment:roof_data.Comment,IsDelete:roof_data.IsDelete
       }];
     const handleShow = () => setShow(true);
   
