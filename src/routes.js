@@ -129,6 +129,7 @@ var dashRoutes = [
     icon: "design-2_ruler-pencil",
     component: Typography,
     layout: "/admin",
+    
   }, {
     path: "/icons",
     name: "Icons",
